@@ -1,0 +1,26 @@
+/* ./your-css-folder/styles.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+.scroll_margin_top {
+  scroll-margin-top: 15px;
+}
+
+.list {
+  @apply flex flex-col gap-y-2 pl-7;
+}
+
+.link_list {
+  @apply text-primary text-sm underline;
+}
+
+.code {
+  @apply bg-code p-1 rounded text-white w-max;
+}
