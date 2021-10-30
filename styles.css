@@ -857,33 +857,35 @@ html {
   color: rgba(255, 255, 255, var(--tw-text-opacity));
 }
 
-@media (min-width: 1024px) {
-  .lg\:relative {
+@media (min-width: 640px) {
+  .sm\:relative {
     position: relative;
   }
 
-  .lg\:ml-6 {
+  .sm\:ml-6 {
     margin-left: 1.5rem;
   }
 
-  .lg\:flex {
+  .sm\:flex {
     display: flex;
   }
 
-  .lg\:h-\[90vh\] {
+  .sm\:h-\[90vh\] {
     height: 90vh;
   }
 
-  .lg\:max-w-3xl {
-    max-width: 48rem;
-  }
-
-  .lg\:items-center {
+  .sm\:items-center {
     align-items: center;
   }
 
-  .lg\:justify-center {
+  .sm\:justify-center {
     justify-content: center;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:max-w-3xl {
+    max-width: 48rem;
   }
 
   .lg\:text-3xl {

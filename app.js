@@ -23,8 +23,12 @@ const imagePopup = document.getElementById("img_command_popup");
 const popupImage = document.getElementById("popup_gif");
 imagesCommand.forEach((imageCommand) => {
   imageCommand.addEventListener("click", (e) => {
-    popupImage.classList.remove("opacity-0", "scale-0");
+    const extensionSrc = e.target.src.split("/").slice(-1).join("").split(".").slice(-1).join("");
+    if (extensionSrc !== "gif") {
+      imagePopup.classList.remove("sm:h-[90vh]");
+    }
     imagePopup.src = e.target.src;
+    popupImage.classList.remove("opacity-0", "scale-0");
   });
 });
 
