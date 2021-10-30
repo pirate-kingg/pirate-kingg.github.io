@@ -6,7 +6,7 @@ textLinks.forEach((textLink) => {
 
 const titlesList = document.querySelectorAll(".title_list");
 titlesList.forEach((titleList) => {
-  const titleListText = titleList.textContent.split(".").pop().split(" ").slice(1, 4).join("-");
+  const titleListText = titleList.textContent.split(".").pop().split(" ").slice(1).join("-");
   titleList.id = titleListText;
   titleList.classList.add("scroll_margin_top");
 });

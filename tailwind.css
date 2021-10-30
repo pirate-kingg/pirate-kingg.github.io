@@ -17,8 +17,12 @@
   @apply flex flex-col gap-y-2 pl-7;
 }
 
-.link_list {
-  @apply text-primary text-sm underline;
+.link_done {
+  @apply text-green-700 underline;
+}
+
+.link_list:not(.link_done) {
+  @apply text-primary underline;
 }
 
 .code {
